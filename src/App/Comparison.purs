@@ -82,6 +82,7 @@ nativePolyfillPairs = fromFoldable
   , Tuple "sign"   { native : ES6.signNative,   polyfill : ES6.signPolyfill   }
   , Tuple "sinh"   { native : ES6.sinhNative,   polyfill : ES6.sinhPolyfill   }
   , Tuple "tanh"   { native : ES6.tanhNative,   polyfill : ES6.tanhPolyfill   }
+  , Tuple "trunc"  { native : ES6.truncNative,  polyfill : ES6.truncPolyfill  }
   ]
 
 values :: Map String Number
@@ -137,4 +138,5 @@ functionLabels =
   , "sign"
   , "sinh"
   , "tanh"
+  , "trunc"
   ]
