@@ -69,18 +69,19 @@ header label =
 
 nativePolyfillPairs :: Map String NativePolyfillPair
 nativePolyfillPairs = fromFoldable
-  [ Tuple "acosh" { native : ES6.acoshNative, polyfill : ES6.acoshPolyfill }
-  , Tuple "asinh" { native : ES6.asinhNative, polyfill : ES6.asinhPolyfill }
-  , Tuple "atanh" { native : ES6.atanhNative, polyfill : ES6.atanhPolyfill }
-  , Tuple "cbrt"  { native : ES6.cbrtNative,  polyfill : ES6.cbrtPolyfill  }
-  , Tuple "cosh"  { native : ES6.coshNative,  polyfill : ES6.coshPolyfill  }
-  , Tuple "expm1" { native : ES6.expm1Native, polyfill : ES6.expm1Polyfill }
-  , Tuple "log10" { native : ES6.log10Native, polyfill : ES6.log10Polyfill }
-  , Tuple "log1p" { native : ES6.log1pNative, polyfill : ES6.log1pPolyfill }
-  , Tuple "log2"  { native : ES6.log2Native,  polyfill : ES6.log2Polyfill  }
-  , Tuple "sign"  { native : ES6.signNative,  polyfill : ES6.signPolyfill  }
-  , Tuple "sinh"  { native : ES6.sinhNative,  polyfill : ES6.sinhPolyfill  }
-  , Tuple "tanh"  { native : ES6.tanhNative,  polyfill : ES6.tanhPolyfill  }
+  [ Tuple "acosh"  { native : ES6.acoshNative,  polyfill : ES6.acoshPolyfill  }
+  , Tuple "asinh"  { native : ES6.asinhNative,  polyfill : ES6.asinhPolyfill  }
+  , Tuple "atanh"  { native : ES6.atanhNative,  polyfill : ES6.atanhPolyfill  }
+  , Tuple "cbrt"   { native : ES6.cbrtNative,   polyfill : ES6.cbrtPolyfill   }
+  , Tuple "cosh"   { native : ES6.coshNative,   polyfill : ES6.coshPolyfill   }
+  , Tuple "expm1"  { native : ES6.expm1Native,  polyfill : ES6.expm1Polyfill  }
+  , Tuple "fround" { native : ES6.froundNative, polyfill : ES6.froundPolyfill }
+  , Tuple "log10"  { native : ES6.log10Native,  polyfill : ES6.log10Polyfill  }
+  , Tuple "log1p"  { native : ES6.log1pNative,  polyfill : ES6.log1pPolyfill  }
+  , Tuple "log2"   { native : ES6.log2Native,   polyfill : ES6.log2Polyfill   }
+  , Tuple "sign"   { native : ES6.signNative,   polyfill : ES6.signPolyfill   }
+  , Tuple "sinh"   { native : ES6.sinhNative,   polyfill : ES6.sinhPolyfill   }
+  , Tuple "tanh"   { native : ES6.tanhNative,   polyfill : ES6.tanhPolyfill   }
   ]
 
 values :: Map String Number
@@ -129,6 +130,7 @@ functionLabels =
   , "cbrt"
   , "cosh"
   , "expm1"
+  , "fround"
   , "log10"
   , "log1p"
   , "log2"
