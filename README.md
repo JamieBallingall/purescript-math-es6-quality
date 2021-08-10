@@ -1,9 +1,8 @@
 # purescript-math-es6-quality
 
-This project helps you evaluate the quality of the polyfills in the library
-`purescript-math-es6`.
+This project helps you evaluate the quality of the polyfills in the library [purescript-math-es6](https://github.com/JamieBallingall/purescript-math-es6).
 
-In `purescript-math-es6` the functions `acosh`, `asinh`, `atanh`, `cbrt`,
+In [purescript-math-es6](https://github.com/JamieBallingall/purescript-math-es6) the functions `acosh`, `asinh`, `atanh`, `cbrt`,
 `cosh`, `expm1`, `log10`, `log1p`, `log2`, `sign`, `sinh`, and `tanh` all have
 type `Number -> Number`. For each three versions are provided:
 
